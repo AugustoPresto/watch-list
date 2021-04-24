@@ -1,0 +1,19 @@
+<div class="row m-4">
+  <% @list.movies.each do |movie| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card-movie">
+        <img src="<%= movie.poster_url %>" alt="<%= movie.title %> poster">
+        <div class="card-movie-text">
+          <div class="card-movie-description">
+            <h2><%= movie.title %> • <%= movie.rating %> <i class="fas fa-star" style="color: #E4BB24;"></i> </h2>
+            <p><%= movie.overview %></p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h3 class="card-movie-bookmark"><strong><i class="fas fa-quote-left"></i> <%= movie.bookmarks.first.comment %></strong></h3>
+          <%= link_to "delete", lists_path, class: "card-movie-delete" %>
+        </div>
+      </div>
+    </div>  
+  <% end %>
+</div>

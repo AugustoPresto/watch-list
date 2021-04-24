@@ -1,0 +1,46 @@
+.card-movie {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-movie img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-movie-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px 5px 20px;
+}
+
+.card-movie-text h2 {
+  font-size: 1.2em;
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+
+.card-movie-text p {
+  font-size: 1em;
+  color: #999999;
+  padding: 0 0 15px 0;
+  margin: 0;
+}
+
+.card-movie-bookmark {
+  font-size: 12px;
+  padding: 0 15px 15px 15px;
+}
+
+.card-movie-delete {
+  color: $danger;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 15px 0 0;
+}
+
+.card-movie-delete:hover {
+  color: #da552f;
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+  <h2 class="p-4">Create a new movies list:</h2>
+  <%= simple_form_for @list do |f| %>
+  <div class="container d-flex justify-content-between align-items-center">
+      <div class="col-sm-10">
+        <%= f.input :name, class: "form-control-lg" %>
+      </div>
+      <%= f.submit 'Create list', class: "btn btn-success mt-3" %>
+  </div>
+  <% end %>
+</div>

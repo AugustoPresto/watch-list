@@ -14,7 +14,6 @@ response = RestClient.get 'https://api.themoviedb.org/3/movie/top_rated?api_key=
 parsed_response = JSON.parse(response)
 movies = parsed_response["results"]
 
-
 movies.each do |movie|
   poster_path = movie["poster_path"]
 
